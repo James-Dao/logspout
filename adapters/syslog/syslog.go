@@ -214,5 +214,5 @@ func (m *SyslogMessage) Timestamp() string {
 }
 
 func (m *SyslogMessage) ContainerName() string {
-	return m.Message.Container.Name[1:]
+	return m.Message.Container.Name[2:]
 }
