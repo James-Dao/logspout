@@ -214,6 +214,5 @@ func (m *SyslogMessage) Timestamp() string {
 }
 
 func (m *SyslogMessage) ContainerName() string {
-	fmt.Sprintln(m.Message.Container.Name[5:])
-	return m.Message.Container.Name[5:]
+	return m.Message.Container.Name[1:]
 }
